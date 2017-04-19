@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile Shopping</title>
+	<link rel="Stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="Stylesheet" href="login.css">
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+
+<style>
+html{
+    background-color:;
+}
+
+ul {
+	
+    list-style-type: none;
+    margin-top:-20px;
+	margin-left:-11px;
+	margin-right:-11px;
+    position:fixed;
+	width:100%;
+    padding: 0;
+    overflow: hidden;
+    background-color:black;
+}
+li {
+    float: left;
+}
+li a {
+	margin-top:-20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+div.foo{
+	color:white;
+	font-family:Comic Sans MS;
+	clear: both;
+    position: relative;
+    height:5em;
+    margin-top:8.2em;
+	background:black;
+	padding-left:19px;
+}
+div.font{
+	font-size:21px;
+	color:black;
+	font-family:Comic Sans MS;
+	text-align: center;
+
+}
+.con {
+    overflow: hidden;
+    background-color: black;
+    font-family: Arial;
+		position:fixed;
+		width:100%;
+}
+
+.con a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.con a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+	
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+div.mar{
+	border:2px solid grey;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/* Set a style for all buttons */
+button {
+    background-color: red;
+    color: white;
+	padding: 14px 20px;
+    margin: 2px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:#543fa8;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+div(
+	  width: 100px;
+    height: 100px;
+  
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+)
+div.hover{
+   width: 300px;
+    height: 300px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+}
+
+
+
+</style>
+</head>
+<body>
+	
+  
+   <div class="con">
+	<a href="file:///D:/ONLINE%20PROJECT/Bootstrap/dup.html"><img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/home-512.png" width="30" height="20">Home</a>
+	<div class="dropdown">
+    <button class="dropbtn"><img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/image--mobile-icon--risk-of-rain-wiki--wikia-3.png" width="20" height="20">Mobile Models</button>
+    <div class="dropdown-content">
+      <a href="#">Apple</a>
+      <a href="#">Google</a>
+      <a href="#">Htc</a>
+	  <a href="#">Lenove</a>
+	  <a href="#">Oppo</a>
+	  <a href="#">Redmi</a>
+      <a href="#">Sony</a>
+	  <a href="#">Samsung</a>
+    </div>
+	</div> 
+    <a href="file:///D:/ONLINE%20PROJECT/Bootstrap/aboutus.html"><img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/about-us-icon.png" width="30" height="20">About us</a>
+	
+	<a onclick="document.getElementById('id01').style.display='block'" style="float:right"><img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/white-login-256.png" width="20" height="20">Login</a>
+	<a onclick="document.getElementById('id02').style.display='block'" style="float:right"><img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/register-icon.png" width="30" height="20">Signup</a>
+	</div>
+	
+	
+	<center>
+	<div class="autoimg" style="max-width:950px" >
+		<img class="mySlides" src="D:\ONLINE PROJECT\Bootstrap\images\mobile4.gif"   style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/iphone_5_apple_mobile_phone_white_model_touch_screen_73409_1920x1080.jpg"  style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Oppo-F1-Rose-Gold-Edition.jpg"   					style="width:100%">
+		<img class="mySlides" src="D:\ONLINE PROJECT\Bootstrap\images\Galaxy-S4-Mobile-1920x1080.jpg"								style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/sony_mobile_xperia_zr_colour_phones_92306_1920x1080.jpg"					style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/sony_xperia_c5_ultra.jpg" 	 						style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/iphone6s-select-2015.jpg"       								style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/nexus2cee_Screenshot-25.png"       								style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/1479230489_Apple-iPhone-6-Latest-Wallpapers-810x608.jpg"      style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/HTC-One-(M8)-Infographic.jpg"    			style="width:100%">
+		<img class="mySlides" src="D:\ONLINE PROJECT\Bootstrap\images\1021201543945PM_635_samsung_galaxy_on5.jpeg"       			style="width:100%">
+		<img class="mySlides" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Sony-Xperia-Z-Ultra-1920x1080-001.jpg"    			style="width:100%">
+	</div>
+	</center>
+	
+	<div class="mar">
+	<marquee <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/apple-iphone-application-development-expert-surat.png" width="120" height="80" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/htc_logo.png" width="120" height="80" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Logo-Oppo.png" width="120" height="80" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Samsung-Logo.png" width="120" height="50" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Sony_logo.svg.png" width="120" height="30" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/xiaoni-mi-fit.png" width="120" height="60" alt="Natural" />
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/Lenovo-Logo.svg.png" width="120" height="60" alt="Natural" />
+	</marquee>
+	</div>
+	
+	<div class="font">
+	<h4><p>Mobile phones are used for a variety of purposes, such as keeping in touch with family members, for conducting business, and in order to have access to a telephone in the event of an emergency. 
+		   Some people carry more than one mobile phone for different purposes, such as for business and personal use. 
+           Multiple SIM cards may be used to take advantage of the benefits of different calling plans. 
+	       For example, a particular plan might provide for cheaper local calls, long-distance calls, international calls, or roaming.
+	</p></h4>
+	</div>
+	
+		
+	<div class="img">
+	<center>
+	<img onmouseover="bigimg(this)" onmouseout="normalimg(this)" border="0" src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/guarantee-badge.png" alt="hai" width="200" height="150" >      
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/white-glove-delivery-8.jpg" width="200" height="150"> 
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/purchase-protection.png"  width="400" height="150"> 
+	<img src="file:///D:/ONLINE%20PROJECT/Bootstrap/images/232.png"  width="300" height="150"> 
+	</center>
+	</div>
+	
+	<div class="subbutton">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="subbuttonbb">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+	
+	
+	
+	
+	<div id="id01" class="modal">
+	<form class="modal-content animate"  action="/action_page.php">
+    <div class="container">
+	
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+	  
+	 
+       <button type="submit" onclick="check(this.f)">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+	
+	<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+	</form>
+	</div>
+	
+	<div id="id02" class="modal">
+	<form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label><b>Firstname</b></label>
+      <input type="text" placeholder="Enter Firstname*" name="fname" required>
+	  
+	  <label><b>Lastname</b></label>
+      <input type="text" placeholder="Enter Lastname*" name="lname" required>
+	  
+	  <label><b>Email Id</b></label>
+      <input type="text" placeholder="Enter Email Id*" name="ename" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password*" name="psw" required>
+	  
+	  <label><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Confirm Password*" name="cpsw" required>
+        
+      <button type="submit">Submit</button>
+     
+	<div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+	</div>
+	</form>
+	</div>
+	
+<script>
+function bigimg(x){
+	x.style.height="500px";
+	x.style.width="300px";
+}
+
+function normalimg(x){
+	x.style.height="200px";
+	x.style.width="150px";
+}
+
+// login page
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+// Signup page
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+
+
+//image slider
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+			
+<footer>
+	<div class="foo">
+	<center>
+	<p><strong>Designed by: Andrews</strong></p>
+	<p><strong>@2017 MobileShop.All Rights Reserved</strong></p>
+	</center>
+	</div>
+</footer>
+	
+			
+	
+</body>
+</html> 

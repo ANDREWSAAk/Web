@@ -1,0 +1,11 @@
+[0329/065535.297:ERROR:exception_handler_server.cc(524)] 
+ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0329/114547.718:ERROR:exception_handler_server.cc(524)] 
+ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0329/123358.173:ERROR:exception_handler_server.cc(524)] 
+ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0404/125230.940:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0404/180648.411:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0404/195206.257:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0406/093801.666:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
+[0406/093809.548:ERROR:exception_handler_server.cc(524)] ConnectNamedPipe: The pipe is being closed. (0xE8)
